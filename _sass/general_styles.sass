@@ -1,0 +1,72 @@
+@import 'colors.sass'
+
+body
+    font-family: 'Montserrat', sans-serif
+    display: block
+    background-color: $primary
+
+*
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+    font-family: 'Montserrat', sans-serif
+    margin: 0
+
+h1
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 800
+    font-size: 36px
+    line-height: 44px
+
+h2
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 800
+    font-size: 36px
+    line-height: 44px
+
+p
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+
+a
+    font-family: 'Montserrat', sans-serif
+    font-size: 1em
+    color: #ffffff
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+strong
+    font-weight: 600
+
+.btn
+    display: block
+
+.btn-sm
+    border-radius: .3em
+    font-weight: 600
+    padding: .5em 1em
+
+.btn-lg
+    border-radius: .3em
+    font-weight: 600
+    padding: .9em 2em
+
+.btn-action
+    background-color: $secondary
+
+.logo
+    background-image: url('../../assets/images/stackfeed-logo.svg')
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: contain
+    display: block
+    height: 3em
+    width: 10em
+    @media only screen and (max-width: 1112px)
+        margin-left: 0
