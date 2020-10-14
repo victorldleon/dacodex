@@ -10,6 +10,9 @@
         margin-left: .5em
     .btn-action
         margin-left: .5em
+    .nav
+        align-items: center
+        display: flex
     @media only screen and (max-width: 870px)
         padding: 1em
         .nav
@@ -35,29 +38,36 @@
 .cover
     align-items: center
     display: flex
-    padding: 4em 8em 0 8em
+    padding: 0 0 0 8em
     width: 100%
     .left-content
         align-items: flex-start
         display: flex
         flex-flow: column
+        justify-content: flex-start
         padding-right: 5%
+        width: 50%
         h1
-            color: white
             margin-bottom: 1em
         p
-            color: white
             margin-bottom: 3em
 
     .right-content
+        align-items: flex-start
+        display: flex
+        justify-content: flex-end
         width: 50%
-        .slick-container
-            margin-bottom: -9.5em
-            .slick-slide
-                display: flex
-                justify-content: center
-        .slick-dots li button:before
-            font-size: 14px
+        .cover-image
+            border-top-left-radius: 30px
+            border-bottom-left-radius: 30px
+            height: 762px
+            max-height: 762px
+            max-width: 511px
+            overflow: hidden
+            width: 511px
+            img
+                height: 100%
+                width: auto
 
     @media only screen and (max-width: 1127px)
         flex-wrap: wrap
