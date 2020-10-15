@@ -75,161 +75,21 @@
         .right-content
             display: none
 
-.how-it-works
-    background-color: #fff
+.pricing
+    align-items: center
+    background-color: #F4F4FB
     display: flex
     flex-flow: column
-    padding: 10em 8em 4em 8em
+    padding: 3em
     width: 100%
-    .how-it-works-row
-        align-items: center
+    .pricing-container
         display: flex
-        justify-content: space-between
-        margin-top: 5em
-        .how-it-works-item
-            align-items: center
-            display: flex
-            flex-flow: column
-            justify-content: center
-            text-align: center
-            width: 15em
-            img
-                margin-bottom: 2em
-    @media only screen and (max-width: 870px)
-        align-items: center
-        flex-wrap: wrap
-        justify-content: center
-        padding: 3em 3em 3em 3em
-        .how-it-works-row
-            align-items: center
-            flex-wrap: wrap
-            justify-content: center
-            margin-top: 3em
-            .how-it-works-item
-                margin-bottom: 2em
-
-.benefits
-    background-color: #fff
-    background-image: url('../../assets/images/benefits-bg.svg')
-    background-position: 0 0
-    background-repeat: no-repeat
-    background-size: 100%
-    display: flex
-    flex-flow: column
-    padding: 20em 8em 8em 8em
-    width: 100%
-    h2
-        text-align: center
         width: 100%
-    .benefits-row
-        display: flex
-        justify-content: space-between
-        margin-top: 5em
-        .benefits-item
-            align-items: center
-            background-color: #fff
-            border-radius: .3em
-            border-top: solid .4em $primary
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-            display: flex
-            flex-flow: column
-            justify-content: center
-            padding: 1.5em
-            text-align: center
-            width: 15em
-            img
-                margin-bottom: 2em
-    @media only screen and (max-width: 870px)
-        align-items: center
-        flex-wrap: wrap
-        justify-content: center
-        padding: 8em 0 0 0
-        .benefits-row
-            background-color: $light
-            flex-wrap: wrap
-            justify-content: center
-            .benefits-item
-                margin-bottom: 2em
-
-.testimonials
-    background-color: $light
-    display: flex
-    flex-flow: column
-    padding: 8em 8em 8em 8em
-    width: 100%
-    h2
-        text-align: center
-        width: 100%
-    .testimonials-row
-        align-items: center
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
-        margin-top: 5em
-        .testimonial-item
-            margin: 2em
-
-            .talk-bubble
-                align-items: center
-                background-color: #fff
-                border-radius: .3em
-                display: flex
-                flex-flow: column
-                height: auto
-                justify-content: center
-                padding: 1.5em
-                position: relative
-                text-align: center
-                width: 20em
-
-            /*Right triangle, placed bottom left side slightly in*/
-            .tri-right.border.btm-left-in:before
-                content: ' '
-                position: absolute
-                width: 0
-                height: 0
-                left: 30px
-                right: auto
-                top: auto
-                bottom: -40px
-                border: 0 solid
-                border-color: $light transparent transparent $light
-
-            .tri-right.btm-left-in:after
-                content: ' '
-                position: absolute
-                width: 0
-                height: 0
-                left: 38px
-                right: auto
-                top: auto
-                bottom: -20px
-                border: 12px solid
-                border-color: white transparent transparent white
-
-            .testimonial-client
-                align-items: center
-                display: flex
-                margin-top: 2em
-                img
-                    border-radius: 50%
-                    height: 4em
-                    margin-right: 1em
-                    width: 4em
-                .testimonial-client-info
-                    .testimonial-company
-                        font-size: .9em
-                        font-weight: 400
-
-    @media only screen and (max-width: 870px)
-        align-items: center
-        flex-wrap: wrap
-        justify-content: center
-        padding: 4em 0
-        h2
-            padding: 0 1em
-        .testimonials-row
-            margin-top: 1.5em
+        .pricing-item
+            background: #FFFFFF
+            box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1)
+            border-radius: 30px
+            padding: 1em
 
 .call-to-action
     align-items: center
