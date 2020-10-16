@@ -13,6 +13,8 @@
     .nav
         align-items: center
         display: flex
+        .btn-link
+            color: $text
     @media only screen and (max-width: 870px)
         padding: 1em
         .nav
@@ -97,10 +99,9 @@
     align-items: flex-start
     display: flex
     flex-wrap: wrap
-    height: 400px
-    margin-bottom: 12em
+    height: 313px
     overflow: visible
-    padding: 8em 8em
+    padding: 2em 8em 0 8em
     width: 100%
     h2
         margin-bottom: 1em
@@ -131,6 +132,22 @@
             ul
                 li
                     color: $primary
+
+.additional-services
+    background-color: #F4F4FB
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding: 12em 8em 8em 8em
+    h2
+        margin-bottom: 1em
+    .additional-services-container
+        display: flex
+        justify-content: center
+        padding-top: 2em
+        width: 100%
+        .additional-services-item
+            width: 350px
 
 .call-to-action
     align-items: center
