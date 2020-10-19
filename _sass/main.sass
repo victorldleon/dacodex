@@ -329,3 +329,55 @@ footer
         height: auto
         margin-top: 1em
         width: 4em
+.locations-container
+    align-items: center
+    display: flex
+    justify-content: flex-start
+    flex-flow: column
+    h2
+        margin-top: 1em
+        margin-bottom: 1em
+    .location-list-item
+        align-items: flex-start
+        display: flex
+        flex-wrap: wrap
+        padding-top: 3em
+        width: 100%
+        .left-content
+            align-items: flex-start
+            display: flex
+            flex-flow: column
+            padding: 0 0 0 8em
+            text-align: left
+            width: 40%
+            h3
+                justify-content: flex-start
+                text-align: left
+            p
+                align-items: flex-start
+                display: flex
+                flex-wrap: wrap
+                justify-content: flex-start
+                padding: 1em 0
+                text-align: left
+                width: 320px
+                b
+                    color: #000000
+        .right-content
+            padding: 0 8em 0 0
+            width: 60%
+        $map-margin: 5em
+        .map
+            background-color: $light
+            display: flex
+            height: 330px
+            justify-content: center
+            margin-top: $map-margin + 3em
+            width: 100%
+            .iframe
+                border-radius: 30px !important
+                margin-top: -$map-margin
+                height: 330px
+                overflow: hidden
+                padding: 0 8em
+                width: 100%
