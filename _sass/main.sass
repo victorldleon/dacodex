@@ -4,10 +4,10 @@
     align-items: center
     display: flex
     justify-content: space-between
-    padding: 1em 3em
+    padding: 1em 8em
     width: 100%
     .btn-link
-        margin-left: .5em
+        margin-left: 1.5em
     .btn-action
         margin-left: .5em
     .nav
@@ -277,8 +277,53 @@
         padding: 0 4em
 
 footer
-    align-items: flex-start
+    align-items: center
     background: #053645
     display: flex
-    padding: 8em 8em 8em 8em
+    flex-flow: column
+    justify-content: flex-start
+    padding: 6em 8em 6em 8em
     width: 100%
+    .footer-logo
+        margin-bottom: 2em
+    .footer-container
+        display: flex
+        justify-content: center
+        .footer-col
+            align-items: center
+            display: flex
+            flex-flow: column
+            padding: 0 1em 1em 1em
+            text-align: center
+            width: 200px
+    a
+        color: #E0E0E0
+    p
+        color: #E0E0E0
+    .social-links
+        align-items: center
+        display: flex
+        margin-top: 1em
+        .social-link
+            background-position: 0 0
+            background-repeat: no-repeat
+            background-size: 100%
+            display: block
+            height: 2em
+            margin: 0 1em .5em 1em
+            width: 2em
+        .link
+            color: $primary
+            text-decoration: underline
+        .linkedin
+            background-image: url('../../assets/images/linkedin.svg')
+        .facebook
+            background-image: url('../../assets/images/facebook.svg')
+        .instagram
+            background-image: url('../../assets/images/instagram.svg')
+    .accent
+        color: #58C0B7
+    .gwa
+        height: auto
+        margin-top: 1em
+        width: 4em
