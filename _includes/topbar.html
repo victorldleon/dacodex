@@ -1,11 +1,11 @@
 <div class="topbar">
     <div class="logo"></div>
     <div class="nav">
-        <a class="btn-link" href="">Inicio</a>
-        <a class="btn-link" href="">Ubicaciones</a>
-        <a class="btn-link" href="">¿Por qué nosotros?</a>
-        <a class="btn-link" href="">Contacto</a>
-        <a class="btn-link" href="">Preguntas frecuentes</a>
-        <a class="btn btn-cta-outline ml-4" href="">Contáctanos</a>
+        <a {% if page.url == '/' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/">Inicio</a>
+        <a {% if page.url == '/ubicaciones.html' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/ubicaciones">Ubicaciones</a>
+        <a {% if page.url == '/nosotros.html' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/nosotros">¿Por qué nosotros?</a>
+        <a {% if page.url == '/contacto.html' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/contacto">Contacto</a>
+        <a {% if page.url == '/faqs.html' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/faqs">Preguntas frecuentes</a>
+        <a  class="btn btn-cta-outline ml-4" href="">Contáctanos</a>
     </div>
 </div>
