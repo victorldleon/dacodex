@@ -16,8 +16,8 @@ $('.slick-container').slick({
 $('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  dots: true,
+  asNavFor: '.slick-container',
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
