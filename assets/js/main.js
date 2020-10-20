@@ -1,8 +1,25 @@
 $(document).ready(function () {
-  $(".slick-container").slick({
-    dots: true,
+  // $(".slick-container").slick({
+  //   dots: true,
+  //   arrows: false,
+  //   autoplay: false,
+  //   centerPadding: 0,
+  // });
+
+$('.slick-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: false,
-    autoplay: false,
-    centerPadding: 0,
-  });
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+		
 });
