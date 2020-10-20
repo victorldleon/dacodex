@@ -265,6 +265,9 @@
                 padding: 1em 0
                 text-align: left
                 width: 100%
+                b
+                    color: #565656
+                    font-weight: 900
             a
                 color: $primary
 
@@ -300,6 +303,9 @@ footer
             width: 200px
     a
         color: #E0E0E0
+        &:hover
+            color: #E0E0E0
+
     p
         color: #E0E0E0
     .social-links
@@ -475,7 +481,6 @@ footer
     display: flex
     justify-content: flex-start
     flex-flow: column
-    padding-bottom: 4em
     h2
         margin-top: 1em
         margin-bottom: 1em
@@ -498,3 +503,23 @@ footer
         .btn-cta
             margin-top: 2em
             width: 100%
+    .contact-details
+        align-items: center
+        background: #F4F4FB
+        display: flex
+        flex-flow: column
+        justify-content: center
+        margin-top: 4em
+        padding: 3em 4em 6em 4em
+        width: 100%
+        p
+            display: flex
+            a
+                color: $primary
+                margin-left: .5em
+                text-decoration: underline
+                font-weight: 900
+            b
+                color: $text
+                margin-left: .5em
+                font-weight: 900
