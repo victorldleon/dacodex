@@ -15,5 +15,11 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true
 });
+
+$('.view-more-card').click(function(event) {
+  event.preventDefault();
+  let cardID = this.getAttribute('data-target');
+  $(cardID).toggleClass('card-overflow');
+})
 		
 });

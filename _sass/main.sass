@@ -84,7 +84,7 @@
     background-color: #F4F4FB
     display: flex
     flex-flow: column
-    height: 700px
+    height: 760px
     margin-bottom: 12em
     overflow: visible
     padding: 8em 8em
@@ -92,11 +92,50 @@
     h2
         margin-bottom: 1em
     .pricing-container
+        align-items: flex-start
         display: flex
         padding-top: 4em
         justify-content: space-between
         width: 100%
-
+        z-index: 9
+        .card
+            max-height: 426px
+            overflow: hidden
+            padding-bottom: 3em
+            .toggle-overflow
+                align-items: center
+                background-color: white
+                bottom: 0
+                display: flex
+                justify-content: center
+                left: 0
+                padding: 1em
+                position: absolute
+                width: 100%
+                text-align: center
+                a
+                    color: $primary
+                    .view-more-card-1
+                        display: block
+                    .view-more-card-2
+                        display: none
+        .card-overflow
+            max-height: 800px
+            .toggle-overflow
+                a
+                    .view-more-card-1
+                        display: none
+                    .view-more-card-2
+                        display: block
+    .pricing-clauses
+        align-items: flex-end
+        display: flex
+        flex-flow: column
+        margin-top: 545px
+        margin-right: 17em
+        position: absolute
+        z-index: 1
+        width: 100%
 .requirements
     align-items: flex-start
     display: flex
