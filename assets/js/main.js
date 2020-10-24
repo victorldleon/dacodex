@@ -20,6 +20,15 @@ $('.view-more-card').click(function(event) {
   event.preventDefault();
   let cardID = this.getAttribute('data-target');
   $(cardID).toggleClass('card-overflow');
-})
-		
+})		
+});
+
+
+$(document).ready(function(){
+  $("#faqsInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#faqsContent li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
 });
