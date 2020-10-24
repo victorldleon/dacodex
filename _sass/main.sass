@@ -17,7 +17,7 @@
         display: flex
         .btn-link
             color: $text
-    @media only screen and (max-width: 870px)
+    @media only screen and (max-width: 1035px)
         padding: 1em
         .nav
             background-color: #fff
@@ -44,6 +44,9 @@
     display: flex
     padding: 20px 0 3em 8em
     width: 100%
+    @media only screen and (max-width: 1035px)
+        padding: 20px 0 0 0
+        flex-wrap: wrap
     .left-content
         align-items: flex-start
         display: flex
@@ -55,6 +58,9 @@
             margin-bottom: 1em
         p
             margin-bottom: 3em
+        @media only screen and (max-width: 1035px)
+            padding: 2em
+            width: 100%
 
     .right-content
         align-items: flex-start
@@ -64,20 +70,24 @@
         .cover-image
             border-top-left-radius: 30px
             border-bottom-left-radius: 30px
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: left
             height: 762px
             max-height: 650px
             max-width: 511px
-            overflow: hidden
             width: 511px
-            img
-                height: 100%
-                width: auto
-
-    @media only screen and (max-width: 1127px)
-        flex-wrap: wrap
-        padding: 1em 3em 3em 3em
-        .right-content
-            display: none
+        @media only screen and (max-width: 1035px)
+            align-items: center
+            justify-content: center
+            width: 100%
+            .cover-image
+                border-radius: 0
+                height: 480px
+                max-height: 480px
+                min-width: 100%
+                overflow: hidden
+                width: 100%
 
 .pricing
     align-items: center
@@ -89,6 +99,10 @@
     overflow: visible
     padding: 8em 8em
     width: 100%
+    @media only screen and (max-width: 1035px)
+        height: auto
+        padding: 6em 1em 0 1em
+
     h2
         margin-bottom: 1em
     .pricing-container
@@ -127,6 +141,14 @@
                         display: none
                     .view-more-card-2
                         display: block
+        @media only screen and (max-width: 1035px)
+            justify-content: center
+            flex-wrap: wrap
+            .card
+                margin-top: 1em
+                width: 100%
+            .last-card-item
+                margin-bottom: -8em
     .pricing-clauses
         align-items: flex-end
         display: flex
@@ -174,7 +196,19 @@
             ul
                 li
                     color: $primary
-
+    @media only screen and (max-width: 1035px)
+        height: auto
+        justify-content: center
+        flex-wrap: wrap
+        padding: 1em
+        .left-content, .right-content
+            margin: 0
+            padding: 0
+            width: 100%
+            .card
+                margin-top: 1em
+                margin-bottom: -8em
+                width: 100%
 .additional-services
     background-color: #F4F4FB
     display: flex
@@ -194,6 +228,20 @@
             justify-content: center
             margin: 1em
             width: 350px
+    @media only screen and (max-width: 1035px)
+        padding: 11em 1em 1em 1em
+        .subtitle
+            text-align: center
+            justify-content: center
+        .additional-services-container
+            flex-wrap: wrap
+            width: 100%
+            .additional-services-item
+                display: flex
+                flex-flow: column
+                justify-content: center
+                margin: 1em
+                width: 100%
 
 .admin-services
     display: flex
