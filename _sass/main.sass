@@ -150,6 +150,8 @@
             .card
                 margin-top: 1em
                 width: 100%
+                .c-text, .price, .title, p
+                    display: block
             .last-card-item
                 margin-bottom: -8em
     .pricing-clauses
@@ -161,6 +163,8 @@
         position: absolute
         z-index: 1
         width: 100%
+        @media only screen and (max-width: 1035px)
+            display: none
 .requirements
     align-items: flex-start
     display: flex
