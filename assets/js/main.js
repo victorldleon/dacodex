@@ -27,7 +27,7 @@ $('.view-more-card').click(function(event) {
 $(document).ready(function(){
   $("#faqsInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#faqsContent li").filter(function() {
+    $("#faqsContent .faq-item").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
