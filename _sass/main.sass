@@ -17,6 +17,18 @@
         display: flex
         .btn-link
             color: $text
+    .navbar-toggler-container
+        align-items: center
+        border-radius: 4px
+        cursor: pointer
+        display: none
+        height: 2.5em
+        justify-content: center
+        width: 2.5em
+        img
+            height: auto
+            width: 100%
+
     @media only screen and (max-width: 1035px)
         padding: 1em
         .nav
@@ -31,13 +43,24 @@
             top: 4.7em
             width: 100%
             .btn-link
+                border-bottom: solid 1px #efefef
                 margin: 0
                 text-align: center
                 padding: 1em
-                &:hover
+                width: 100%
+                &:focus
+                    background-color: #eeeeee
+                    text-decoration: none
+            .active
+                background-color: #efefef
+                text-decoration: none
             .btn-action
                 margin-top: 1em
                 text-align: center
+        .activated
+            display: flex
+        .navbar-toggler-container
+            display: flex
 
 .cover
     align-items: center
