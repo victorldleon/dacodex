@@ -781,6 +781,11 @@ footer
     display: flex
     justify-content: flex-start
     flex-flow: column
+    padding: 0 1em
+    @media only screen and (max-width: 1035px)
+        width: 100%
+        .faqs-input-container
+            width: 100%
     h2
         margin-top: 1em
         margin-bottom: 1em
@@ -795,15 +800,23 @@ footer
         font-size: 14px
         padding: .7em
         width: 397px
+        @media only screen and (max-width: 1035px)
+            width: 100%
     .faqsContent
         text-align: left
         display: flex
         justify-content: center
         padding: 2em 4em 4em 4em
+        @media only screen and (max-width: 1035px)
+            padding: 1em
         ul
             min-width: 606px
             width: 60%
             list-style-type: none
+            @media only screen and (max-width: 1035px)
+                padding: 0
+                min-width: 100%
+                width: 100%
             li
                 width: 100%
                 .subtitle
@@ -823,3 +836,5 @@ footer
                     text-align: left
                 .inner-ul
                     list-style-type: initial
+                    @media only screen and (max-width: 1035px)
+                        padding-left: 2em
