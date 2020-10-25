@@ -529,6 +529,11 @@ footer
     h2
         margin-top: 1em
         margin-bottom: 1em
+    @media only screen and (max-width: 1035px)
+        .subtitle
+            text-align: center
+            padding: 0 1em
+
     .location-list-item
         align-items: flex-start
         display: flex
@@ -595,7 +600,6 @@ footer
                     align-items: center
                     text-align: center
                     color: #828282
-
         $map-margin: 6em
         .map
             background-color: $light
@@ -611,7 +615,28 @@ footer
                 overflow: hidden
                 padding: 0 8em
                 width: 100%
-
+        @media only screen and (max-width: 1035px)
+            justify-content: center
+            padding-top: 2em
+            .left-content
+                justify-content: center
+                max-width: 791px
+                text-align: center
+                padding: 1em
+                width: 100%
+                h3
+                    width: 100%
+                p
+                    width: 100%
+            .right-content
+                padding: 1em
+                width: 100%
+                .slider-nav
+                    height: 150px
+                    overflow: hidden
+            .map
+                .iframe
+                    padding: 0 1em
 .nosotros-container
     align-items: center
     display: flex
