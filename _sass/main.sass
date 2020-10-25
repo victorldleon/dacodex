@@ -645,6 +645,10 @@ footer
     h2
         margin-top: 1em
         margin-bottom: 1em
+    @media only screen and (max-width: 1035px)
+        .subtitle
+            text-align: center
+            padding: 0 1em
 
     $nosotros-item-margin: 40px
     .nosotros-items-container
@@ -653,6 +657,9 @@ footer
         justify-content: flex-start
         padding: 4em 0
         width: 100%
+        @media only screen and (max-width: 1035px)
+            padding: 1em 0
+
         .nosotros-item-1
             display: flex
             height: 175px
@@ -667,6 +674,20 @@ footer
                 justify-content: center
                 margin: 2.9em 1em -3em 1em
                 width: 475px
+            @media only screen and (max-width: 1035px)
+                height: 290px
+                flex-wrap: wrap
+                h2
+                    margin: 1em 0 0 0
+                    text-align: center
+                    width: 100%
+                .card
+                    align-items: center
+                    display: flex
+                    justify-content: center
+                    margin: .9em 1em -3em 1em
+                    width: 475px
+
         .nosotros-item-2
             background: #F4F4FB
             display: flex
@@ -686,6 +707,19 @@ footer
                 justify-content: center
                 margin: 2.9em 1em -3em 1em
                 width: 475px
+            @media only screen and (max-width: 1035px)
+                height: 290px
+                flex-wrap: wrap
+                h2
+                    margin: 0
+                    text-align: center
+                    width: 100%
+                .card
+                    align-items: center
+                    display: flex
+                    justify-content: center
+                    margin: .9em 1em -3em 1em
+                    width: 475px
 
 .contact-container
     align-items: center
