@@ -14,7 +14,7 @@ $toggle_menu_button.on("click", function() {
 $('.slick-container').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
     asNavFor: '.slider-nav'
 });
